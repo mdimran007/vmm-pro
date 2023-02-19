@@ -10,10 +10,8 @@ class DashboardController extends Controller
 {
     public function index(){
 
-		
-		
+
     	if(Auth::user()->utype==='ADM'){
-			
 
     		return redirect()->route('admin.dashboard');
 
@@ -25,11 +23,11 @@ class DashboardController extends Controller
 
 		}
     	else{
-			
+
     		// return false;
     	}
 
-		
-    	
+
+
     }
 }

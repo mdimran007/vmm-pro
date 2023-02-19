@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-        <h1>User Dashboard</h1>
-         <!-- Authentication -->
-                            <form method="POST" action="{{ route('logout') }}">
-                                @csrf
+@extends('user.master');
+@section('title')
+    Dashboard
+@endsection
+@section('content')
 
-                                <a href="{{ route('logout') }}"
-                                         onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                    {{ __('Log Out') }}
-                                </a>
-                            </form>
-</body>
-</html>
+
+Test
+@endsection

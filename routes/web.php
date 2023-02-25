@@ -22,6 +22,8 @@ Route::get('/register', function () {
 });
 
 
+Route::get('/vmm-cron-script', 'App\Http\Controllers\BackEnd\VmmCronScriptController@script')->name('vmm-cron-script');
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'App\Http\Controllers\BackEnd\DashboardController@index')->name('dashboard');
 

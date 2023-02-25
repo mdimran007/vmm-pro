@@ -20,6 +20,7 @@ class CreateVMMSTable extends Migration
             $table->integer('minimum_invest');
             $table->integer('distribute_coin');
             $table->integer('prepration_time');
+            $table->integer('execution_time');
             $table->dateTime('start_time');
             $table->string('status');
             $table->timestamps();

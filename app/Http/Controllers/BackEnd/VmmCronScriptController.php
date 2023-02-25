@@ -36,6 +36,10 @@ class VmmCronScriptController extends Controller
                             $cloneVmmObj->start_time = date('Y-m-d h:i:s', strtotime($vmm->start_time.'+1 hours'));;
                             $cloneVmmObj->status = $vmm->status;
                             $cloneVmmObj->save();
+
+                            if($cloneVmmObj->id && $cloneVmmObj->id !=null){
+                                echo 'VMM Execution Successfully Completed.';
+                            }
                         }
                     }
                 }
